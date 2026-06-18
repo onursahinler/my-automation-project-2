@@ -1,0 +1,10 @@
+{
+    "loginCredentials": {
+      "username": "Admin",
+      "password": "admin123"
+    },
+    "searchFilters": {
+      "systemUser": "Admin",
+      "employeeName": "Charlie Carter"
+    }
+  }
