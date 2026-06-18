@@ -29,16 +29,16 @@ Bu proje, kurumsal bir İnsan Kaynakları Yönetim (SaaS) platformu olan **Orang
 playwright-advanced-dashboard/
 ├── data/               # Test verileri ve yüklenecek medya dosyaları
 │   ├── adminData.json
-│   └── avatar.png
+│   ├── avatar.png
 │   └── jobUpdateData.json
 ├── pages/              # POM Sayfa Nesneleri ve Gelişmiş Metotlar
 │   ├── DashboardPage.ts
 │   ├── AdminPage.ts
-│   └── PIMPage.ts
+│   ├── PIMPage.ts
 │   └── JobDetailPage.ts
 ├── tests/              # Modüler test senaryoları
 │   ├── adminPanel.spec.ts
-│   └── pimPanel.spec.ts
+│   ├── pimPanel.spec.ts
 │   └── jobUpdate.spec.ts
 ├── playwright.config.ts
 └── package.json
