@@ -60,6 +60,15 @@ export class PIMPage {
     await this.saveButton.click();
   }
 
+  async editFirstEmployeeInTable() {
+    // page yerine this.page kullanıyoruz
+    const firstRow = this.page.locator('.oxd-table-card').first();
+    
+    const editButton = firstRow.locator('.bi-pencil-fill').locator('xpath=..');
+    await editButton.click();
+    await this.page.waitForLoadState('networkidle');
+  }
+  
   async verifySuccessNotification() {
     await expect(this.successToast).toBeVisible({ timeout: 15000 });
     await expect(this.successToast).toContainText('Successfully Saved', { timeout: 15000 });
